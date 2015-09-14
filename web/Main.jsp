@@ -20,10 +20,10 @@
                         <form id="rectangle" name="rectangle" method="POST" action="MainController?formId=rectangle">
                             <h3>Rectangle Area Calculator</h3>
                             <img src="../src/java/Common/rectangle.gif" alt="" class="img-responsive"/>
-                            Length: <input type="text" name="length"><br/>
-                            Width: <input type="text" name="width"><br/>
+                            Length: <input type="text" name="length" class="form-control input-lg"><br/>
+                            Width: <input type="text" name="width" class="form-control input-lg"><br/>
                             <input type="submit" value="Submit" class="btn btn-primary btn-sm"><br />
-                            Area: <label id="resultRectangle">${areaRectangle}</label>
+                            Area: <label id="resultRectangle" class="label label-primary">${areaRectangle}</label>
                         </form>
                     </div>
 
@@ -31,10 +31,10 @@
                         <form id="triangle" name="triangle" method="POST" action="MainController?formId=triangle">
                             <h3>Triangle Area Calculator</h3>
                             <img src="../src/java/Common/triangle.jpg" alt="" class="img-rounded"/><br />
-                            Base: <input type="text" name="base"><br />
-                            Height: <input type="text" name="height"><br />
+                            Base: <input type="text" name="base" class="form-control input-default"><br />
+                            Height: <input type="text" name="height" class="form-control input-default"><br />
                             <input type="submit" value="Submit" class="btn btn-primary btn-sm"><br />
-                            Area: <label id="resultTriangle">${areaTriangle}</label>
+                            Area: <label id="resultTriangle" class="label label-default">${areaTriangle}</label>
                         </form>
                     </div>
 
@@ -43,9 +43,9 @@
                             <h3>Circle Area Calculator</h3>
                             <br/>
                             <img src="../src/java/Common/circle.gif" alt="" class="img-circle"/><br/>
-                            Radius: <input type="text" name="radius"><br />
+                            Radius: <input type="text" name="radius" class="form-control input-sm"><br />
                             <input type="submit" value="Submit" class="btn btn-primary btn-sm"><br />
-                            Area: <label id="resultCircle">${areaCircle}</label>
+                            Area: <label id="resultCircle" class="label label-info">${areaCircle}</label>
                             <br/>
                         </form>
                     </div>
