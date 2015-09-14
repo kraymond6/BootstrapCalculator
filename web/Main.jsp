@@ -16,10 +16,10 @@
         <div class="container">
             <div class="row">
                 <div class="column-container">
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="background-color: lightskyblue">
                         <form id="rectangle" name="rectangle" method="POST" action="MainController?formId=rectangle">
                             <h3>Rectangle Area Calculator</h3>
-                            <!-- <img src="../src/java/Common/rectangle.gif" alt="" class="img-responsive"/> -->
+                            <img src="../src/java/Common/rectangle.gif" alt="" class="img-responsive"/>
                             Length: <input type="text" name="length"><br/>
                             Width: <input type="text" name="width"><br/>
                             <input type="submit" value="Submit" class="btn btn-primary btn-sm"><br />
@@ -27,10 +27,10 @@
                         </form>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="background-color: aquamarine">
                         <form id="triangle" name="triangle" method="POST" action="MainController?formId=triangle">
                             <h3>Triangle Area Calculator</h3>
-                            <img src="../src/java/Common/triangle.jpg" alt="" class="img-rounded"/>
+                            <img src="../src/java/Common/triangle.jpg" alt="" class="img-rounded"/><br />
                             Base: <input type="text" name="base"><br />
                             Height: <input type="text" name="height"><br />
                             <input type="submit" value="Submit" class="btn btn-primary btn-sm"><br />
@@ -38,13 +38,15 @@
                         </form>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="background-color: lightskyblue">
                         <form id="circle" name="circle" method="POST" action="MainController?formId=circle">
                             <h3>Circle Area Calculator</h3>
-                            <img src="../src/java/Common/circle.gif" alt="" class="img-circle"/>
+                            <br/>
+                            <img src="../src/java/Common/circle.gif" alt="" class="img-circle"/><br/>
                             Radius: <input type="text" name="radius"><br />
                             <input type="submit" value="Submit" class="btn btn-primary btn-sm"><br />
                             Area: <label id="resultCircle">${areaCircle}</label>
+                            <br/>
                         </form>
                     </div>
                 </div>
