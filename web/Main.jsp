@@ -8,11 +8,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        
         <title>Calculators</title>
     </head>
     <body>
+        
         <div class="container">
             <div class="row">
                 <div class="column-container">
@@ -23,10 +26,11 @@
                             Length: <input type="text" name="length" class="form-control input-lg"><br/>
                             Width: <input type="text" name="width" class="form-control input-lg"><br/>
                             <input type="submit" value="Submit" class="btn btn-primary btn-sm"><br />
-                            Area: <label id="resultRectangle" class="label label-primary">${areaRectangle}</label>
+                            Area:<fmt:formatNumber pattern="#.##">${areaRectangle}</fmt:formatnumber>
                         </form>
                     </div>
-
+                        
+                        <!-- use JSTL to format the double output -->
                     <div class="col-md-4" style="background-color: aquamarine">
                         <form id="triangle" name="triangle" method="POST" action="MainController?formId=triangle">
                             <h3>Triangle Area Calculator</h3>
